@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolta.cc | Automotive Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">Bolta<span>.cc</span></div>
+            </a>
+
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" data-i18n-placeholder="searchPlaceholder" placeholder="Search for car parts (e.g. Toyota Brake Pads)">
+                    <button type="submit">
+                        <img src="images/search-icon.png" alt="Search" width="20">
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <div class="action-item lang-dropdown">
+                    <span class="top-label" data-i18n="langLabel">Language</span>
+                    <div class="bottom-row">
+                        <span class="main-text" id="current-lang">English</span>
+                        <span class="arrow">⌄</span>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-lang="en">English</a>
+                        <a href="#" class="dropdown-link" data-lang="ar">العربية</a>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="action-item disabled">
+                    <span class="top-label" data-i18n="accountLabel">Login / Signup</span>
+                    <span class="main-text" data-i18n="accountMain">My account</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="action-item cart-item disabled">
+                    <div class="cart-icon-wrapper">
+                        <img src="images/cart-icon.png" alt="Cart" width="26">
+                        <span class="cart-badge">0</span>
+                    </div>
+                    <div class="cart-text-group">
+                        <span class="top-label" data-i18n="cartLabel">Shopping</span>
+                        <span class="main-text" data-i18n="cartMain">Cart</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 data-i18n="heroTitle">The smarter way to buy parts.</h1>
+            <p data-i18n="heroSub">Quality car parts, delivered anywhere in Egypt.</p>
+            
+            <div class="button-container">
+                <a href="#" class="main-action">
+                    <div class="icon-circle">
+                        <img src="images/box-icon.png" alt="Order" width="40">
+                    </div>
+                    <b data-i18n="orderNow">Order Now</b>
+                    <span data-i18n="orderSub">Search by VIN or Model</span>
+                </a>
+
+                <a href="#" class="main-action">
+                    <div class="icon-circle">
+                        <img src="images/track-icon.png" alt="Track" width="40">
+                    </div>
+                    <b data-i18n="trackOrder">Track Order</b>
+                    <span data-i18n="trackSub">Check delivery status</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
