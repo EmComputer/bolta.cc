@@ -6,7 +6,7 @@ const translations = {
         accountMain: "My account",
         cartMain: "Cart",
         heroTitle: "The smarter way to buy parts.",
-        heroSub: "Quality car parts, delivered anywhere in Egypt.",
+        heroSub: "Any spare part, delivered anywhere in Egypt.",
         orderNow: "Order Now",
         orderSub: "Search by VIN or Model",
         trackOrder: "Track Order",
