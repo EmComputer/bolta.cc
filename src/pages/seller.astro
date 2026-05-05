@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/baselayout.astro';
+import en from '../i18n/en.json';
+---
+
+<BaseLayout title="Sell on Bolta" lang="en">
+  <section class="landing-hero">
+    <h1>{en.sellerHeroTitle}</h1>
+    <p>{en.sellerHeroSub}</p>
+    <a href="#" class="cta-button">{en.sellerJoinNow}</a>
+  </section>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Inventory Management</h3>
+      <p>Upload your stock and manage orders through our simple dashboard.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Secure Payments</h3>
+      <p>Get paid directly to your account once the delivery PIN is confirmed.</p>
+    </div>
+  </div>
+</BaseLayout>

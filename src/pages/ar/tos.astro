@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/baselayout.astro';
+import ar from '../../i18n/ar.json';
+---
+<BaseLayout title={ar.terms} lang="ar">
+  <div class="tos-container">
+    <aside class="tos-nav">
+      <button class="active" onclick="showTab('customers')">{ar.tosTabCustomer}</button>
+      <button onclick="showTab('drivers')">{ar.tosTabDriver}</button>
+      <button onclick="showTab('sellers')">{ar.tosTabSeller}</button>
+    </aside>
+    <div class="tos-content">
+      <section id="customers" class="tos-section active">
+        <h2>{ar.tosCustTitle}</h2>
+        <div class="term-item">
+           <h3>{ar.tosCustScamH}</h3>
+           <p>{ar.tosCustScamP}</p>
+        </div>
+      </section>
+      <section id="drivers" class="tos-section">
+        <h2>{ar.tosTabDriver}</h2>
+        <p>محتوى السائقين في بولتا</p>
+      </section>
+      <section id="sellers" class="tos-section">
+        <h2>{ar.tosTabSeller}</h2>
+        <p>محتوى البائعين في بولتا</p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

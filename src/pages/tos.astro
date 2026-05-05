@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/baselayout.astro';
+import en from '../i18n/en.json';
+---
+<BaseLayout title={en.terms} lang="en">
+  <div class="tos-container">
+    <aside class="tos-nav">
+      <button class="active" onclick="showTab('customers')">{en.tosTabCustomer}</button>
+      <button onclick="showTab('drivers')">{en.tosTabDriver}</button>
+      <button onclick="showTab('sellers')">{en.tosTabSeller}</button>
+    </aside>
+    <div class="tos-content">
+      <section id="customers" class="tos-section active">
+        <h2>{en.tosCustTitle}</h2>
+        <div class="term-item">
+           <h3>{en.tosCustScamH}</h3>
+           <p>{en.tosCustScamP}</p>
+        </div>
+      </section>
+      <section id="drivers" class="tos-section">
+        <h2>{en.tosTabDriver}</h2>
+        <p>Driver content for Bolta.cc</p>
+      </section>
+      <section id="sellers" class="tos-section">
+        <h2>{en.tosTabSeller}</h2>
+        <p>Seller content for Bolta.cc</p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

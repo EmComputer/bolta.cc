@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/baselayout.astro';
+import ar from '../../i18n/ar.json';
+---
+
+<BaseLayout title="الرئيسية" lang="ar">
+
+    <section class="hero">
+        <h1>{ar.heroTitle}</h1>
+        <p>{ar.heroSub}</p>
+        
+        <div class="button-container">
+            <a href="#" class="main-action">
+                <div class="icon-circle">
+                    <img src="/images/box-icon.png" alt="Order" width="40">
+                </div>
+                <b>{ar.orderNow}</b>
+                <span>{ar.orderSub}</span>
+            </a>
+
+            <a href="#" class="main-action">
+                <div class="icon-circle">
+                    <img src="/images/track-icon.png" alt="Track" width="40">
+                </div>
+                <b>{ar.trackOrder}</b>
+                <span>{ar.trackSub}</span>
+            </a>
+        </div>
+    </section>
+	
+</BaseLayout>

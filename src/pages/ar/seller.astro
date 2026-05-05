@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/baselayout.astro';
+import ar from '../../i18n/ar.json';
+---
+
+<BaseLayout title="بع على بولتا" lang="ar">
+  <section class="landing-hero">
+    <h1>{ar.sellerHeroTitle}</h1>
+    <p>{ar.sellerHeroSub}</p>
+    <a href="#" class="cta-button">{ar.sellerJoinNow}</a>
+  </section>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>إدارة المخزون</h3>
+      <p>قم برفع قطع الغيار الخاصة بك وإدارة الطلبات من خلال لوحة تحكم بسيطة.</p>
+    </div>
+    <div class="feature-card">
+      <h3>مدفوعات آمنة</h3>
+      <p>احصل على مستحقاتك مباشرة بمجرد تأكيد استلام الطلب عبر رقم الـ PIN.</p>
+    </div>
+  </div>
+</BaseLayout>

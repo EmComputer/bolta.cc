@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/baselayout.astro';
+import en from '../i18n/en.json';
+---
+
+<BaseLayout title="Home" lang="en">
+
+    <section class="hero">
+        <h1>{en.heroTitle}</h1>
+        <p>{en.heroSub}</p>
+        
+        <div class="button-container">
+            <a href="#" class="main-action">
+                <div class="icon-circle">
+                    <img src="/images/box-icon.png" alt="Order" width="40">
+                </div>
+                <b>{en.orderNow}</b>
+                <span>{en.orderSub}</span>
+            </a>
+
+            <a href="#" class="main-action">
+                <div class="icon-circle">
+                    <img src="/images/track-icon.png" alt="Track" width="40">
+                </div>
+                <b>{en.trackOrder}</b>
+                <span>{en.trackSub}</span>
+            </a>
+        </div>
+    </section>
+	
+</BaseLayout>

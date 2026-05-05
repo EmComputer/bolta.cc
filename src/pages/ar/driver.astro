@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/baselayout.astro';
+import ar from '../../i18n/ar.json';
+---
+
+<BaseLayout title="Deliver with Bolta" lang="ar">
+  <section class="landing-hero driver-theme">
+    <h1>{ar.driverHeroTitle}</h1>
+    <p>{ar.driverHeroSub}</p>
+    <a href="#" class="cta-button">{ar.driverCTA}</a>
+  </section>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>{ar.driverFeat1Title}</h3>
+      <p>{ar.driverFeat1Desc}</p>
+    </div>
+    <div class="feature-card">
+      <h3>{ar.driverFeat2Title}</h3>
+      <p>{ar.driverFeat2Desc}</p>
+    </div>
+  </div>
+</BaseLayout>

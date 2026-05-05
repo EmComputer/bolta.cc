@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/baselayout.astro';
+import en from '../i18n/en.json';
+---
+
+<BaseLayout title={en.aboutUs} lang="en">
+  <section class="about-container">
+    <div class="about-content">
+      <h1>{en.aboutTitle}</h1>
+      <p>{en.aboutDesc1}</p>
+      
+      <div class="mission-grid">
+        <div class="mission-item">
+          <h3>{en.missionTitle}</h3>
+          <p>{en.missionDesc}</p>
+        </div>
+        <div class="mission-item">
+          <h3>{en.locationTitle}</h3>
+          <p>{en.location}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
